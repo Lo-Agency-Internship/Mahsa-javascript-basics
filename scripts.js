@@ -18,3 +18,19 @@ let saveValue = workDay;
 workDay = offDay;
 offDay = saveValue;
 alert("workDay: " + workDay + " offDay: " + offDay);
+
+// data-type
+
+let firstName = prompt("write down your first name: ");
+let lastName = prompt("write down your last name: ");
+let personAge = prompt("write down your age: ");
+let gender = prompt("write down your gender: ");
+
+alert(`first name: ${firstName} , last name: ${lastName} , age: ${personAge} , gender:${gender}`);
+
+// show info on the page
+
+let message = `first name: ${firstName} , last name: ${lastName} , age: ${personAge} , gender:${gender}`;
+alert(message);
+document.getElementById("bonus").innerHTML = message;
+
