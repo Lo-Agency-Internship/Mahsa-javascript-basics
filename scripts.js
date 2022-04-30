@@ -53,4 +53,29 @@ function bin2dec(a){
 let num = bin2dec(101010);
 console.log(bin2dec(num));
 
+// comparisons
 
+function sumSameNum(a,b){
+  if(a===b){
+    return 3 * (a + b)
+  }
+}
+
+// absolute difference
+
+function calDiff(a){
+  const num = 19;
+  Math.abs(a-num);
+  if(a > num){
+    return (a - num)*3
+  }
+}
+
+//  string 
+let str = "agency";
+function checkstr(str){
+  if(str[0]==="L" && str[1]==="o"){
+    return str
+  }
+  return  "Lo" +  str
+}
