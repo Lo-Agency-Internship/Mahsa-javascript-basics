@@ -34,3 +34,23 @@ let message = `first name: ${firstName} , last name: ${lastName} , age: ${person
 alert(message);
 document.getElementById("bonus").innerHTML = message;
 
+// Basic operator math
+// 4 math
+function rand (a,b){
+    return Math.floor(Math.random()* (b-a) + a)
+  }
+
+let a = rand(5,8);
+console.log(a);
+
+
+  //binary to decimal
+
+function bin2dec(a){
+      return parseInt(a,2)
+  }
+
+let num = bin2dec(101010);
+console.log(bin2dec(num));
+
+
