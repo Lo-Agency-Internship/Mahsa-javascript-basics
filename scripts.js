@@ -79,3 +79,50 @@ function checkstr(str){
   }
   return  "Lo" +  str
 }
+// logical operators
+function logicalGateBuffer(a){
+  return a
+}
+
+function logicalGateNot(a){
+  return !a
+}
+function logicalGateAnd(a,b){
+  if(a===true,b===true){
+    return true
+  }
+  return false
+}
+function logicalGateOr(a,b){
+  if (a===false && b===false){
+    return false
+  }
+  return true
+}
+function logicalGateNand(a,b){
+  if(a===true && b===true){
+    return false
+  }
+  return true
+}
+function logicalGateNor(a,b){
+  if (a===false && b === false){
+    return true
+  }
+  return false
+}
+
+function logicalGateXor(a,b){
+  if(a===b){
+    return false
+  }
+  return true
+}
+
+  function logicalGateXnor(a,b){
+    if (a===b){
+      return true
+    }
+    return false
+  }
+  
