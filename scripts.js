@@ -172,3 +172,54 @@ function factorialRecursive(num){
 return "you should write a positive number"
 }
 console.log(factorialRecursive(num));
+
+// Function
+// create an array of random number(15,50)
+let arr = [];
+for(let i=0;i<=5;i++){
+  randNum = rand(15,50);
+  arr.push(randNum)
+}
+//create custom Map function
+function customMap(arr,f){
+  let result = [];
+  for(let i=0;i<arr.length;i++){
+    let num = f(arr[i]);
+    result.push(num)
+  }
+  return result
+}
+
+console.log(arr);
+let result = customMap(arr,a=> a * 2)
+console.log(result);
+
+//create a custom filter function
+function customFilter(arr,f){
+  let result = [];
+  for(let i=0;i<arr.length;i++){
+    numFiltered = f(arr[i]);
+    if (numFiltered){
+      result.push(arr[i])
+    }
+    
+  }
+  
+  return result
+}
+console.log(arr);
+let result = customFilter(arr,a => (a % 2) === 0);
+console.log(result);
+
+//create a custom reduce function
+function customReduce(arr,f){
+  let accumulator = 0;
+  for(let i=0;i<arr.length;i++){
+    accumulator = f(arr[i],accumulator)
+    
+  }
+  
+  return accumulator
+}
+let result = customReduce(arr,(a ,b)=> a + b)
+console.log(result);
