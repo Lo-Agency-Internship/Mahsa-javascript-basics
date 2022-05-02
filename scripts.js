@@ -173,7 +173,8 @@ return "you should write a positive number"
 }
 console.log(factorialRecursive(num));
 
-// Function
+// Function customMap , customFilter, customreduce
+
 // create an array of random number(15,50)
 const arr = [];
 for(let i=0;i<=5;i++){
@@ -212,6 +213,7 @@ const result = customFilter(arr,a => (a > 2));
 console.log(result);
 
 //create a custom reduce function
+
 function customReduce(arr,f){
   let accumulator = 0;
   for(let i=0;i<arr.length;i++){
