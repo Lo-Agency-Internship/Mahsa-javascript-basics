@@ -175,7 +175,7 @@ console.log(factorialRecursive(num));
 
 // Function
 // create an array of random number(15,50)
-let arr = [];
+const arr = [];
 for(let i=0;i<=5;i++){
   randNum = rand(15,50);
   arr.push(randNum)
@@ -191,12 +191,12 @@ function customMap(arr,f){
 }
 
 console.log(arr);
-let result = customMap(arr,a=> a * 2)
+const result = customMap(arr,a=> a * 2)
 console.log(result);
 
 //create a custom filter function
 function customFilter(arr,f){
-  let result = [];
+  const result = [];
   for(let i=0;i<arr.length;i++){
     numFiltered = f(arr[i]);
     if (numFiltered){
@@ -208,7 +208,7 @@ function customFilter(arr,f){
   return result
 }
 console.log(arr);
-let result = customFilter(arr,a => (a % 2) === 0);
+const result = customFilter(arr,a => (a > 2));
 console.log(result);
 
 //create a custom reduce function
@@ -221,5 +221,5 @@ function customReduce(arr,f){
   
   return accumulator
 }
-let result = customReduce(arr,(a ,b)=> a + b)
+const result = customReduce(arr,(acc ,cv)=> acc + cv)
 console.log(result);
