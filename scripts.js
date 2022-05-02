@@ -80,6 +80,7 @@ function checkstr(str){
   return  "Lo" +  str
 }
 // logical operators
+
 function logicalGateBuffer(a){
   return a
 }
@@ -87,24 +88,31 @@ function logicalGateBuffer(a){
 function logicalGateNot(a){
   return !a
 }
+
+
 function logicalGateAnd(a,b){
   if(a===true,b===true){
     return true
   }
   return false
 }
+
+
 function logicalGateOr(a,b){
   if (a===false && b===false){
     return false
   }
   return true
 }
+
+
 function logicalGateNand(a,b){
   if(a===true && b===true){
     return false
   }
   return true
 }
+
 function logicalGateNor(a,b){
   if (a===false && b === false){
     return true
@@ -125,4 +133,42 @@ function logicalGateXor(a,b){
     }
     return false
   }
+  // Loops/factorial
+
+const num = parseInt(prompt("write a positive number"));
+
+function factorialRepetitive(num){
+  if (num > 0){
+    let result=1;
+    for(let i=1;i <= num;i++){
+      result = result * i
+    }
+    return result
+  }
+  else if (num === 0){
+    return 1
+  }
+  return "you should choose a posivte number"
   
+}
+
+console.log(factorialRepetitive(num));
+
+
+
+function factorialRecursive(num){
+  if (num === 0){
+    return 1
+  }
+  else if (num > 0){
+    let result = 1;
+    for(let i=1;i<=num;i++){
+      result = i * factorialRecursive(i-1)
+      
+    }
+    return result
+  
+  }
+return "you should write a positive number"
+}
+console.log(factorialRecursive(num));
